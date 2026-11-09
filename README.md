@@ -1,4 +1,4 @@
-# Biomedical Research Superagent Pack
+# Omnitro: Biomedical Research Superagent Skills
 
 A portable set of instructions and modular skills for configuring an AI assistant to help with biomedical research. This is an independently written starter pack, not an official Biomni project or a replacement for Biomni's software, tools, or data.
 
@@ -60,3 +60,7 @@ To check the pack's supported frontmatter format and folder names locally, run `
 These are instructions, not a model, executable agent, biomedical database, or set of analysis tools. Results depend on the AI model and tools available in the environment. Web search, code execution, access to papers, and data analysis require a compatible assistant or separately configured tools. Do not put API keys, private patient data, or other sensitive information in this pack or a public repository.
 
 The pack is for research support and education, not diagnosis, treatment, or clinical decision-making. Validate scientific claims and consult qualified experts and institutional safety and ethics processes before acting on research suggestions.
+
+## Copyright and license
+
+Copyright (c) 2026 yashmgupta and Omnitro contributors. The instructional content is licensed under CC-BY-4.0 (see `LICENSE`); attribution is required. Omnitro is independent and is not affiliated with or endorsed by Biomni or Stanford. Third-party tools, models and data referenced here keep their own licenses.
