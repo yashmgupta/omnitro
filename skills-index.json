@@ -1,0 +1,337 @@
+{
+  "count": 45,
+  "categories": [
+    {
+      "name": "Core research workflow",
+      "summary": "General-purpose skills to start from: literature, design, analysis.",
+      "skills": [
+        {
+          "name": "literature-review",
+          "path": "skills/literature-review/SKILL.md",
+          "description": "Use when the user asks to find, summarize, compare, or synthesize biomedical or clinical research evidence — e.g. \"what does the evidence say about\", \"summarize the literature on\", \"find papers/studies/trials about\", \"systematic review\", \"meta-analysis\", \"is there evidence that X causes Y\", or requests comparing drugs, genes, biomarkers, or interventions against published research. Produces traceable sources and explicit uncertainty rather than fabricated citations.",
+          "scripts": []
+        },
+        {
+          "name": "study-design",
+          "path": "skills/study-design/SKILL.md",
+          "description": "Use when the user asks to design, plan, or critique a biomedical or clinical study — e.g. \"design an experiment to test\", \"plan a study on\", \"what study design would answer\", \"critique this trial design\", \"how should I set up a cohort/case-control/RCT for\", or requests for sample size, hypothesis framing, or methodology feedback. Produces a conceptual, ethically aware plan, not an operational wet-lab protocol.",
+          "scripts": []
+        },
+        {
+          "name": "data-analysis",
+          "path": "skills/data-analysis/SKILL.md",
+          "description": "Use when the user asks to analyze, interpret, or write code for biomedical or clinical data — e.g. \"analyze this dataset\", \"what statistical test should I use\", \"interpret these results\", \"help me with this scRNA-seq / GWAS / clinical trial data\", \"check this analysis for errors\", or shares a data file and asks for findings. Produces reproducible, assumption-aware analysis and avoids reporting results that were not actually computed.",
+          "scripts": []
+        },
+        {
+          "name": "research-ideation",
+          "path": "specialized-skills/research-ideation/SKILL.md",
+          "description": "Generate and assess biomedical research ideas, hypotheses, unanswered questions, and project directions. Use to brainstorm mechanisms, prioritize research questions, or develop a research roadmap from supplied evidence.",
+          "scripts": []
+        },
+        {
+          "name": "search-strategy",
+          "path": "specialized-skills/search-strategy/SKILL.md",
+          "description": "Use to design reproducible literature and database searches: PICO framing, keyword and controlled vocabulary (MeSH) selection, Boolean logic, database choice, search filters, grey literature and preprints, deduplication, screening workflow, and documenting searches for systematic or scoping reviews.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Statistics and evidence",
+      "summary": "Power, inference, appraisal, synthesis and modeling.",
+      "skills": [
+        {
+          "name": "statistical-power",
+          "path": "specialized-skills/statistical-power/SKILL.md",
+          "description": "Use when the user asks about sample size, statistical power, minimum detectable effect, number of replicates, or whether a study or experiment is underpowered. Also use to review power statements in protocols and grants. Covers means, proportions, clustering, dropout, and why omics studies need design-specific power tools. Includes a tested stdlib calculator.",
+          "scripts": [
+            "specialized-skills/statistical-power/scripts/power.py"
+          ]
+        },
+        {
+          "name": "statistical-analysis",
+          "path": "specialized-skills/statistical-analysis/SKILL.md",
+          "description": "Use when the user needs to choose, run, check, or interpret statistical tests for biomedical data: t-tests, nonparametric tests, regression, mixed models, confidence intervals, effect sizes, p-values, multiple-testing correction, FDR, missing data, outliers, or pseudoreplication. Includes a tested multiple-testing calculator.",
+          "scripts": [
+            "specialized-skills/statistical-analysis/scripts/multiple_testing.py"
+          ]
+        },
+        {
+          "name": "survival-analysis",
+          "path": "specialized-skills/survival-analysis/SKILL.md",
+          "description": "Use for time-to-event analysis: Kaplan-Meier curves, log-rank tests, Cox proportional hazards models, hazard ratios, censoring, competing risks, overall or progression-free survival, time-varying covariates, immortal-time bias, or restricted mean survival time in clinical or biological cohorts.",
+          "scripts": []
+        },
+        {
+          "name": "causal-inference",
+          "path": "specialized-skills/causal-inference/SKILL.md",
+          "description": "Use when the user asks whether an exposure or treatment causes an outcome using observational data: confounding, DAGs, propensity scores, inverse probability weighting, target trial emulation, instrumental variables, Mendelian randomization, E-values, negative controls, or mediation.",
+          "scripts": []
+        },
+        {
+          "name": "meta-analysis",
+          "path": "specialized-skills/meta-analysis/SKILL.md",
+          "description": "Use when the user wants to plan, run, critique, or interpret a systematic review or meta-analysis: pooling effect sizes, odds ratios, risk ratios, hazard ratios, standardized mean differences, heterogeneity, I-squared, forest plots, funnel plots, publication bias, subgroup analysis, or PRISMA flow.",
+          "scripts": []
+        },
+        {
+          "name": "evidence-appraisal",
+          "path": "specialized-skills/evidence-appraisal/SKILL.md",
+          "description": "Use when the user asks how reliable, biased, or certain a body of evidence or an individual study is: risk of bias, study quality, GRADE, certainty of evidence, confounding, internal and external validity, or critical appraisal of trials, cohorts, diagnostic studies, prediction models, or animal studies.",
+          "scripts": []
+        },
+        {
+          "name": "reporting-guidelines",
+          "path": "specialized-skills/reporting-guidelines/SKILL.md",
+          "description": "Use when preparing, checking, or reviewing a manuscript, protocol, or study report against a reporting guideline or checklist: CONSORT, STROBE, PRISMA, STARD, TRIPOD, ARRIVE, SPIRIT, CARE, COREQ, SRQR, CHEERS, REMARK, MIAME, or similar. Also use to pick the right guideline for a study type.",
+          "scripts": []
+        },
+        {
+          "name": "biomedical-machine-learning",
+          "path": "specialized-skills/biomedical-machine-learning/SKILL.md",
+          "description": "Use when building, reviewing, or interpreting machine-learning or deep-learning models on biomedical data: classifiers, prognostic or diagnostic prediction, biomarker panels, omics-based models, imaging models, data leakage, cross-validation, calibration, external validation, class imbalance, interpretability, or model cards.",
+          "scripts": []
+        },
+        {
+          "name": "research-model-selection",
+          "path": "specialized-skills/research-model-selection/SKILL.md",
+          "description": "Find, compare, or assess AI models and datasets for biomedical research, including Hugging Face model cards, datasets, model evaluation, and responsible research use. Use for selecting biological language models or open research resources.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Genomics and sequencing",
+      "summary": "DNA, RNA and epigenome data from reads to results.",
+      "skills": [
+        {
+          "name": "sequencing-qc-alignment",
+          "path": "specialized-skills/sequencing-qc-alignment/SKILL.md",
+          "description": "Use for raw sequencing data handling: FASTQ quality control, adapter and quality trimming, contamination screening, read alignment or pseudoalignment, BAM or CRAM processing, duplicate marking, coverage and mapping metrics, reference genome and annotation selection, and MultiQC-style reporting.",
+          "scripts": []
+        },
+        {
+          "name": "genomic-coordinates",
+          "path": "specialized-skills/genomic-coordinates/SKILL.md",
+          "description": "Use when working with positions on genomes: BED versus VCF or GFF coordinate conventions, 0-based and 1-based indexing, half-open intervals, chromosome naming (chr1 vs 1), genome build mismatches (GRCh37 vs GRCh38), liftOver, strand, intersecting intervals, and off-by-one bugs.",
+          "scripts": []
+        },
+        {
+          "name": "genomics-variants",
+          "path": "specialized-skills/genomics-variants/SKILL.md",
+          "description": "Analyze or interpret genomic variants, VCF files, variant annotations, genome builds, allele frequencies, and variant prioritization for research. Use for questions about SNPs, indels, variant filtering, or variant-quality assessment.",
+          "scripts": [
+            "specialized-skills/genomics-variants/scripts/vcf_summary.py"
+          ]
+        },
+        {
+          "name": "rna-seq-analysis",
+          "path": "specialized-skills/rna-seq-analysis/SKILL.md",
+          "description": "Plan or review bulk RNA-seq analysis, gene expression counts, differential expression, sample quality control, batch effects, and functional interpretation. Use for transcriptomics questions and count-matrix analysis.",
+          "scripts": [
+            "specialized-skills/rna-seq-analysis/scripts/check_counts_metadata.py"
+          ]
+        },
+        {
+          "name": "chip-atac-seq",
+          "path": "specialized-skills/chip-atac-seq/SKILL.md",
+          "description": "Use for ChIP-seq, CUT&RUN, CUT&Tag, and ATAC-seq analysis: read QC, FRiP, fragment size, TSS enrichment, peak calling, replicate reproducibility, blacklist regions, consensus peaks, differential binding or accessibility, motif analysis, and peak-to-gene assignment.",
+          "scripts": []
+        },
+        {
+          "name": "gwas-statistical-genetics",
+          "path": "specialized-skills/gwas-statistical-genetics/SKILL.md",
+          "description": "Use for genome-wide association studies and statistical genetics: sample and variant QC, population stratification, mixed models, REGENIE, SAIGE, PLINK, summary statistics, LD, clumping, fine-mapping, colocalization, heritability, polygenic scores, and harmonizing alleles across datasets.",
+          "scripts": []
+        },
+        {
+          "name": "crispr-screen-analysis",
+          "path": "specialized-skills/crispr-screen-analysis/SKILL.md",
+          "description": "Use for analysis and interpretation of pooled CRISPR knockout, CRISPRi, or CRISPRa screens and Perturb-seq: guide count QC, library coverage, replicate correlation, gene essentiality, MAGeCK, BAGEL, drugZ, copy-number bias, hit calling, and validation planning. Analysis only, not laboratory protocols.",
+          "scripts": []
+        },
+        {
+          "name": "phylogenetics",
+          "path": "specialized-skills/phylogenetics/SKILL.md",
+          "description": "Use for evolutionary and sequence-comparison analysis: multiple sequence alignment, alignment trimming, substitution model selection, maximum likelihood or Bayesian tree inference, bootstrap and posterior support, rooting, molecular clock dating, orthology, and tree interpretation.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Single-cell, spatial and multi-omics",
+      "summary": "Cell-resolved and multi-layer molecular data.",
+      "skills": [
+        {
+          "name": "single-cell-analysis",
+          "path": "specialized-skills/single-cell-analysis/SKILL.md",
+          "description": "Plan or review single-cell RNA sequencing analysis, cell quality control, clustering, annotation, integration, and differential expression. Use for scRNA-seq, AnnData, Scanpy, Seurat, cell-type markers, and pseudobulk questions.",
+          "scripts": []
+        },
+        {
+          "name": "spatial-transcriptomics",
+          "path": "specialized-skills/spatial-transcriptomics/SKILL.md",
+          "description": "Use for spatial transcriptomics and spatial omics: Visium, Visium HD, Xenium, MERFISH, CosMx, Slide-seq, spot or cell segmentation, deconvolution, spatially variable genes, domain detection, niche or neighborhood analysis, cell-cell interaction, and multi-slide integration.",
+          "scripts": []
+        },
+        {
+          "name": "multi-omics-integration",
+          "path": "specialized-skills/multi-omics-integration/SKILL.md",
+          "description": "Use when combining two or more molecular data layers (transcriptome, proteome, methylome, metabolome, genome, imaging, CITE-seq) on the same samples or cells: MOFA, mixOmics DIABLO, similarity network fusion, joint embeddings, factor analysis, matched versus unmatched samples, and cross-layer interpretation.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Proteins, metabolites and microbes",
+      "summary": "Proteomics, metabolomics, structure and microbiome.",
+      "skills": [
+        {
+          "name": "proteomics-analysis",
+          "path": "specialized-skills/proteomics-analysis/SKILL.md",
+          "description": "Use for mass-spectrometry proteomics or phosphoproteomics data analysis: DDA, DIA, TMT, label-free quantification, protein groups, missing values, normalization, imputation, batch correction, differential abundance, PTM site localization, FDR, or MaxQuant, DIA-NN, Spectronaut, FragPipe, Proteome Discoverer outputs.",
+          "scripts": []
+        },
+        {
+          "name": "metabolomics-analysis",
+          "path": "specialized-skills/metabolomics-analysis/SKILL.md",
+          "description": "Use for metabolomics and lipidomics data: untargeted or targeted LC-MS, GC-MS, or NMR, feature detection, QC samples, drift correction, normalization, metabolite identification confidence, missing values, PCA, PLS-DA, and pathway interpretation.",
+          "scripts": []
+        },
+        {
+          "name": "protein-structure",
+          "path": "specialized-skills/protein-structure/SKILL.md",
+          "description": "Use for interpreting protein structure data and predictions: PDB and mmCIF files, AlphaFold or other predicted models, pLDDT, PAE, ipTM, experimental resolution and validation, domain and interface analysis, mapping variants to structure, and structure-based hypotheses about function.",
+          "scripts": []
+        },
+        {
+          "name": "metagenomics-microbiome",
+          "path": "specialized-skills/metagenomics-microbiome/SKILL.md",
+          "description": "Use for microbiome and metagenomic data: 16S or ITS amplicon sequencing, shotgun metagenomics, ASVs, taxonomy assignment, contamination, diversity metrics, PERMANOVA, compositional differential abundance, functional profiling, and longitudinal or low-biomass studies.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Databases, pathways and chemistry",
+      "summary": "Public resources, functional interpretation and drug discovery data.",
+      "skills": [
+        {
+          "name": "biomedical-databases",
+          "path": "specialized-skills/biomedical-databases/SKILL.md",
+          "description": "Find and reconcile research data from biomedical databases such as PubMed, NCBI Gene, Ensembl, UniProt, GEO, and ClinVar. Use for gene or protein identifiers, dataset discovery, accession lookup, database provenance, and cross-resource comparisons.",
+          "scripts": []
+        },
+        {
+          "name": "pathway-enrichment",
+          "path": "specialized-skills/pathway-enrichment/SKILL.md",
+          "description": "Analyze or interpret gene-set and pathway enrichment, over-representation analysis, ranked gene-set analysis, functional annotation, and biological pathway results. Use for GO, Reactome, and gene-list interpretation questions.",
+          "scripts": []
+        },
+        {
+          "name": "cheminformatics-drug-discovery",
+          "path": "specialized-skills/cheminformatics-drug-discovery/SKILL.md",
+          "description": "Use for computational chemistry and early drug discovery data analysis: SMILES standardization, RDKit workflows, ChEMBL or PubChem bioactivity curation, descriptors, fingerprints, similarity, scaffold-aware data splits, QSAR models, ADMET-style property prediction, docking interpretation, and hit triage. Not for synthesis of hazardous or harmful compounds.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Writing, tables and figures",
+      "summary": "Communicating results.",
+      "skills": [
+        {
+          "name": "scientific-writing",
+          "path": "specialized-skills/scientific-writing/SKILL.md",
+          "description": "Draft, edit, or structure biomedical scientific writing, including manuscripts, abstracts, introductions, methods, results, discussion, figure legends, and grant research summaries. Use when improving clarity and evidence alignment.",
+          "scripts": []
+        },
+        {
+          "name": "research-tables",
+          "path": "specialized-skills/research-tables/SKILL.md",
+          "description": "Create, check, or format scientific evidence tables, study-characteristics tables, data dictionaries, and statistical results tables. Use for spreadsheets, manuscript tables, cohort summaries, and research comparisons.",
+          "scripts": [
+            "specialized-skills/research-tables/scripts/safe_csv.py"
+          ]
+        },
+        {
+          "name": "scientific-visualization",
+          "path": "specialized-skills/scientific-visualization/SKILL.md",
+          "description": "Design, generate, or review scientific plots and publication figures, including distributions, scatterplots, heatmaps, volcano plots, and multi-panel figures. Use for Python or R plotting, visual accessibility, and figure interpretation.",
+          "scripts": []
+        },
+        {
+          "name": "scientific-presentations",
+          "path": "specialized-skills/scientific-presentations/SKILL.md",
+          "description": "Use for building conference talks, lab meeting slides, thesis defenses, and scientific posters: story structure, slide design, figure simplification, timing, speaker notes, anticipated questions, and accessible visuals.",
+          "scripts": []
+        },
+        {
+          "name": "grant-writing",
+          "path": "specialized-skills/grant-writing/SKILL.md",
+          "description": "Use for drafting or improving research grant proposals and fellowship applications: specific aims, significance and innovation, approach, rigor and reproducibility, preliminary data, timeline, milestones, risk mitigation, budget justification narratives, and alignment with funder criteria such as NIH, ERC, or foundation formats.",
+          "scripts": []
+        },
+        {
+          "name": "peer-review",
+          "path": "specialized-skills/peer-review/SKILL.md",
+          "description": "Use when asked to review or critique a scientific manuscript, grant, preprint, or analysis: structured referee reports, assessing validity of design, statistics, and conclusions, identifying missing controls, evaluating data and code availability, and writing constructive, specific, prioritized comments.",
+          "scripts": []
+        },
+        {
+          "name": "manuscript-revision",
+          "path": "specialized-skills/manuscript-revision/SKILL.md",
+          "description": "Use when responding to reviewer comments or editing a manuscript after peer review: point-by-point response letters, triaging comments, planning new analyses, tracking changes, rebutting respectfully, handling disagreement, and keeping the revised text, figures, and response consistent.",
+          "scripts": []
+        }
+      ]
+    },
+    {
+      "name": "Integrity, data and tooling",
+      "summary": "Verification, ethics, reproducibility and programming.",
+      "skills": [
+        {
+          "name": "citation-verification",
+          "path": "specialized-skills/citation-verification/SKILL.md",
+          "description": "Use before finalizing any manuscript, report, or literature summary that cites papers: verify that each reference exists and supports the claim attributed to it, check DOIs, detect duplicates, find retractions or corrections, and catch fabricated or misattributed citations. Includes an offline DOI extraction and de-duplication script.",
+          "scripts": [
+            "specialized-skills/citation-verification/scripts/doi_tools.py"
+          ]
+        },
+        {
+          "name": "research-ethics-biosafety",
+          "path": "specialized-skills/research-ethics-biosafety/SKILL.md",
+          "description": "Use when a research task touches human subjects, patient or genomic data, animals, indigenous or community data, pathogens, toxins, gene editing, or dual-use research: IRB and IACUC approvals, consent, privacy, data use agreements, biosafety levels, dual-use concerns, authorship and integrity, and when to escalate to an institutional authority.",
+          "scripts": []
+        },
+        {
+          "name": "research-data-management",
+          "path": "specialized-skills/research-data-management/SKILL.md",
+          "description": "Use for planning, organizing, documenting, and sharing research data: data management plans, FAIR principles, file naming, metadata standards, data dictionaries, repositories and accessions, licenses, versioning, backup, de-identification, and controlled-access data.",
+          "scripts": []
+        },
+        {
+          "name": "reproducible-workflows",
+          "path": "specialized-skills/reproducible-workflows/SKILL.md",
+          "description": "Use to make computational analyses reproducible and portable: workflow managers (Nextflow, Snakemake, WDL), containers, lockfiles, environment capture, random seeds, versioned inputs and checksums, project layout, and a provenance snapshot script. Trigger for requests about rerunning, sharing, or archiving an analysis.",
+          "scripts": [
+            "specialized-skills/reproducible-workflows/scripts/snapshot_env.py"
+          ]
+        },
+        {
+          "name": "python-research",
+          "path": "specialized-skills/python-research/SKILL.md",
+          "description": "Write, debug, review, or run reproducible Python code for research data analysis. Use for pandas, NumPy, scientific scripts, notebooks, analysis pipelines, data validation, and statistical computing.",
+          "scripts": []
+        },
+        {
+          "name": "r-bioconductor",
+          "path": "specialized-skills/r-bioconductor/SKILL.md",
+          "description": "Use for R and Bioconductor work in genomics: SummarizedExperiment, SingleCellExperiment, GenomicRanges, DESeq2, edgeR, limma, tidyverse data handling, ggplot2 figures, package installation and renv lockfiles, Bioconductor release matching, and common R debugging in bioinformatics.",
+          "scripts": []
+        }
+      ]
+    }
+  ]
+}

@@ -14,6 +14,14 @@ license: CC-BY-4.0
 4. Choose an appropriate method such as DESeq2 or edgeR based on the input and design. State the contrast direction, filtering rule, multiple-testing correction, effect-size measure, and thresholds. Assess model assumptions and sensitivity where practical.
 5. For functional interpretation, define the tested gene background, identifier mapping, database version, and enrichment method. Report effect sizes and adjusted p-values alongside uncertainty; enrichment does not establish a mechanism or causal relationship.
 
+## Helper script
+
+Check that count-matrix columns and metadata sample IDs agree (missing, extra, duplicated) before modeling:
+
+`python3 specialized-skills/rna-seq-analysis/scripts/check_counts_metadata.py counts.csv metadata.csv --sample-col sample`
+
+See also `sequencing-qc-alignment` and `r-bioconductor`.
+
 ## Deliverable
 
 Give the design and QC decisions, code or results only if actually generated, a reproducible environment, and limitations. Distinguish biological replicates from technical replicates. Never fabricate counts, differentially expressed genes, figures, or statistics.

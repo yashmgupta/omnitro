@@ -16,6 +16,14 @@ Use for research analysis of DNA sequence variants, not patient-specific diagnos
 4. Normalize representations when appropriate and preserve the original records and transformations. Annotate using appropriate transcript consequences and population frequencies; consider ancestry, coverage, and database version. A frequency is not proof of pathogenicity.
 5. Prioritize candidates against the stated research hypothesis and uncertainty. Separate observed genotypes, database annotations, computational predictions, and hypotheses. Note technical validation needs and alternative explanations.
 
+## Helper script
+
+Quick, offline sanity summary of a VCF or VCF.gz (record counts, contigs, Ti/Tv, missing genotypes). It supplements, and does not replace, caller-specific QC:
+
+`python3 specialized-skills/genomics-variants/scripts/vcf_summary.py calls.vcf.gz`
+
+See also `genomic-coordinates` for build and indexing pitfalls.
+
 ## Deliverable
 
 Provide a reproducible plan or actual computed results, with input and reference versions, selection criteria, limitations, and a candidate table when justified. If data, tools, or reference resources are unavailable, explicitly say so; never invent variants or annotations. Clinical use requires a qualified professional and validated clinical workflow.

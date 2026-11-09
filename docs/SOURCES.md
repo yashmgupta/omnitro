@@ -14,6 +14,27 @@ The skills in this pack are independently written, not copies of the repositorie
 | [Paper Workbench](https://github.com/Yrzsh/paper-workbench) | 120 | Academic writing and evidence-verification workflows. | MIT according to repository metadata. |
 | [Biomni](https://github.com/snap-stanford/Biomni) | Not ranked here | Biomedical agent software with broad biomedical tool categories; it is not just a skills catalog. | Biomni is Apache-2.0; integrated tools and databases may have other terms. |
 
+## Additional skill collections surveyed (2026-11-09)
+
+Surveyed to find coverage gaps; the new skills here are independently written, not copied. Counts and stars are snapshots from repository metadata and READMEs; they were not audited. Check each project's license file before reuse.
+
+| Project | Snapshot | Notable scope | License note |
+| --- | --- | --- | --- |
+| [K-Dense scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | ~56.5k stars, 177 skills | Broad scientific skills with bundled scripts and references. | MIT per metadata. |
+| [GPTomics bioSkills](https://github.com/GPTomics/bioSkills) | 562 skills | Very large bioinformatics catalog. Only skimmed by name here. | MIT per metadata. |
+| [SciAgent-Skills](https://github.com/jaechang-hits/SciAgent-Skills) | ~386 stars | Scientific agent skills. | Check repository. |
+| [MannLabs proteomics-agent-skills](https://github.com/MannLabs/proteomics-agent-skills) | 11 skills | Proteomics workflows. | Apache-2.0 per metadata. |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 63 skills | Medical research and reporting. | MIT per metadata. |
+| [K-Dense drug-discovery-agent-skills](https://github.com/K-Dense-AI/drug-discovery-agent-skills) | 37 skills | Cheminformatics and drug discovery. | MIT per metadata. |
+| [ssinder bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills) | n/a | Bioinformatics skills. | MIT per metadata. |
+| [aipoch medical-research-skills](https://github.com/aipoch/medical-research-skills) | n/a | Medical research skills. | MIT per metadata. |
+| [AlterLab Academic Skills](https://github.com/AlterLab-IEU/AlterLab-Academic-Skills) | 241 skills (85 stars) | Academic research and writing. | MIT per metadata. |
+| [awesome-genomic-skills](https://github.com/GoekeLab/awesome-genomic-skills) | n/a | Curated genomic skills list. | CC0 per metadata. |
+| [awesome-bio-agent-skills](https://github.com/BioTender-max/awesome-bio-agent-skills) | n/a | Curated bio skills list. | Check repository. |
+| [ClawBio](https://github.com/ClawBio/ClawBio), [KalarisLabs research-agent-skills](https://github.com/KalarisLabs/research-agent-skills), [ai4s-skills](https://github.com/ai4s-research/ai4s-skills), [scipilot-figure-skill](https://github.com/Haojae/scipilot-figure-skill), [claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer), [paper-search-pro](https://github.com/O0000-code/paper-search-pro) | n/a | Bioinformatics, research workflow, figures, writing and paper search. | Check each repository. |
+
+Design patterns adopted from these collections: skills that bundle small runnable scripts and references, trigger-rich descriptions, explicit verification statuses for citations, and machine-readable indexes. Design choices specific to this pack: stdlib-only helpers, a validator, a generated index with a category check, and safety boundaries for dual-use topics.
+
 ## Hugging Face and major AI company resources
 
 | Project | Snapshot stars | What to explore |

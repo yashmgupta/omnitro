@@ -14,6 +14,12 @@ license: CC-BY-4.0
 4. Preserve numeric values internally, apply consistent rounding only for display, and report exact tests and multiple-testing adjustments when supplied. Never fabricate data or p-values to fill a table.
 5. Make the table accessible with descriptive headers, units, defined abbreviations, and explanatory footnotes. Sanitize untrusted cell values before exporting to spreadsheet formats if a spreadsheet application might interpret them as formulas.
 
+## Helper script
+
+Neutralize spreadsheet formula injection (cells starting with `=`, `+`, `-`, `@`) in a CSV before sharing or opening it in a spreadsheet:
+
+`python3 specialized-skills/research-tables/scripts/safe_csv.py input.csv output.csv`
+
 ## Deliverable
 
 Return the requested table with a caption or data dictionary and caveats. Mark missing values explicitly, avoid exposing identifiable records, and state whether summaries were actually calculated or are illustrative templates.

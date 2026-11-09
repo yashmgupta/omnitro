@@ -1,0 +1,47 @@
+{
+  "Core research workflow": {
+    "summary": "General-purpose skills to start from: literature, design, analysis.",
+    "skills": ["literature-review", "study-design", "data-analysis", "research-ideation", "search-strategy"]
+  },
+  "Statistics and evidence": {
+    "summary": "Power, inference, appraisal, synthesis and modeling.",
+    "skills": [
+      "statistical-power", "statistical-analysis", "survival-analysis", "causal-inference",
+      "meta-analysis", "evidence-appraisal", "reporting-guidelines",
+      "biomedical-machine-learning", "research-model-selection"
+    ]
+  },
+  "Genomics and sequencing": {
+    "summary": "DNA, RNA and epigenome data from reads to results.",
+    "skills": [
+      "sequencing-qc-alignment", "genomic-coordinates", "genomics-variants", "rna-seq-analysis",
+      "chip-atac-seq", "gwas-statistical-genetics", "crispr-screen-analysis", "phylogenetics"
+    ]
+  },
+  "Single-cell, spatial and multi-omics": {
+    "summary": "Cell-resolved and multi-layer molecular data.",
+    "skills": ["single-cell-analysis", "spatial-transcriptomics", "multi-omics-integration"]
+  },
+  "Proteins, metabolites and microbes": {
+    "summary": "Proteomics, metabolomics, structure and microbiome.",
+    "skills": ["proteomics-analysis", "metabolomics-analysis", "protein-structure", "metagenomics-microbiome"]
+  },
+  "Databases, pathways and chemistry": {
+    "summary": "Public resources, functional interpretation and drug discovery data.",
+    "skills": ["biomedical-databases", "pathway-enrichment", "cheminformatics-drug-discovery"]
+  },
+  "Writing, tables and figures": {
+    "summary": "Communicating results.",
+    "skills": [
+      "scientific-writing", "research-tables", "scientific-visualization",
+      "scientific-presentations", "grant-writing", "peer-review", "manuscript-revision"
+    ]
+  },
+  "Integrity, data and tooling": {
+    "summary": "Verification, ethics, reproducibility and programming.",
+    "skills": [
+      "citation-verification", "research-ethics-biosafety", "research-data-management",
+      "reproducible-workflows", "python-research", "r-bioconductor"
+    ]
+  }
+}
